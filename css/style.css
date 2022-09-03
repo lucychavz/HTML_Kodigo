@@ -475,7 +475,7 @@ header.sticky {
   letter-spacing: 2px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
   header {
     padding: 17px 3%;
     transition: .2s;
@@ -499,9 +499,24 @@ header.sticky {
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
   #menu-icon {
     display: block;
+
+  }
+
+  bx bx-menu {
+    display: block;
+  }
+
+  ul li {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0eded;
+    top: 80px;
+    left: 100%;
+
   }
 
   .stick #menu-icon {
@@ -519,57 +534,61 @@ header.sticky {
     width: 270px;
     height: 120vh;
     background: #1067cc;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     padding: 150px 30px;
     transition: 0.5s all;
-  }
-
-  .navbar a {
-    display: block;
-    margin: 1.2rem 0;
-  }
-
-  .sticky .navbar a {
-    color: var(--bg-color);
-  }
-
-  .navbar a:hover {
-    color: var(--text-color);
-  }
-
-  .open {
-    right: 0;
-  }
-
-  .list {
-    width: 50%;
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 575px) {
-  .list {
-    width: 100%;
-  }
-
-  .newsletter form {
-    width: 350px;
-  }
-
-  :root {
-    --big-font: 3.8rem;
-    --h2-font: 1.8rem;
-    transition: .2s;
-  }
-
-  .text {
     text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    /*   gap: 2rem;
+  } */
+
+    .navbar a {
+      display: block;
+      margin: 1.2rem 0;
+    }
+
+    .sticky .navbar a {
+      color: var(--bg-color);
+    }
+
+    .navbar a:hover {
+      color: var(--text-color);
+    }
+
+    .open {
+      right: 0;
+    }
+
+    .list {
+      width: 50%;
+      margin-bottom: 12px;
+    }
   }
 
-  .home {
-    height: 85vh;
-    transition: .2s;
+  @media (max-width: 768px) {
+    .list {
+      width: 100%;
+    }
+
+    .newsletter form {
+      width: 350px;
+    }
+
+    :root {
+      --big-font: 3.8rem;
+      --h2-font: 1.8rem;
+      transition: .2s;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .home {
+      height: 85vh;
+      transition: .2s;
+    }
   }
-}
