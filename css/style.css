@@ -148,6 +148,18 @@ section {
   align-items: center;
 }
 
+.home-6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/imposible.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
 .home-text h1 {
   font-size: var(--big-font);
   line-height: 1.2;
@@ -556,51 +568,52 @@ header.sticky {
     color: var(--blanco);
     /*   gap: 2rem;
   } */
-
-    .navbar a {
-      display: block;
-      margin: 1.2rem 0;
-    }
-
-    .sticky .navbar a {
-      color: var(--bg-color);
-    }
-
-    .navbar a:hover {
-      color: var(--text-color);
-    }
-
-    .open {
-      right: 0;
-    }
-
-    .list {
-      width: 50%;
-      margin-bottom: 12px;
-    }
   }
 
-  @media (max-width: 768px) {
-    .list {
-      width: 100%;
-    }
-
-    .newsletter form {
-      width: 350px;
-    }
-
-    :root {
-      --big-font: 3.8rem;
-      --h2-font: 1.8rem;
-      transition: .2s;
-    }
-
-    .text {
-      text-align: center;
-    }
-
-    .home {
-      height: 85vh;
-      transition: .2s;
-    }
+  .navbar a {
+    display: block;
+    margin: 1.2rem 0;
   }
+
+  .sticky .navbar a {
+    color: var(--bg-color);
+  }
+
+  .navbar a:hover {
+    color: var(--text-color);
+  }
+
+  .open {
+    right: 0;
+  }
+
+  .list {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    width: 100%;
+  }
+
+  .newsletter form {
+    width: 350px;
+  }
+
+  :root {
+    --big-font: 3.8rem;
+    --h2-font: 1.8rem;
+    transition: .2s;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .home {
+    height: 85vh;
+    transition: .2s;
+  }
+}
