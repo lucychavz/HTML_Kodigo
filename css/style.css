@@ -160,6 +160,18 @@ section {
   align-items: center;
 }
 
+.home-7 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/pital.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
 .home-text h1 {
   font-size: var(--big-font);
   line-height: 1.2;
